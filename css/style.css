@@ -1,0 +1,93 @@
+*{
+      box-sizing: border-box;
+}
+
+body{
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+   background-color: cornsilk;
+   border-radius: 5px;
+   overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,3); 
+   
+   
+}
+ .form {
+   padding: 30px, 40px;
+   
+ }
+ .form-hiddens{
+  display:none;
+ }
+ .header {
+   text-align: center;
+   background-color: rgb(230, 224, 224);
+   padding: 5px;
+    margin-bottom: 20px;
+ }
+
+ .form-control {
+   margin-bottom:10px;
+   position: relative;
+   
+ }
+ 
+ .form-control input{
+   border: 2px solid hsl(0, 1%, 72%);
+   border-radius: 4px;
+   display: block;
+   height: 40px;
+   margin-left: 30px;
+   width: 85%;
+    
+ }
+ .form-hiden{
+  display: none;
+ }
+ .login-link{
+  text-align: center;
+  font-size: 11px;
+  color: rgb(41, 40, 40);
+ }
+  .form-control.success input{
+   border-color: #1ee43f;
+ }
+ .form-control label{
+   text-align: left;
+   display: inline-block;
+   margin-left: 30px;
+   text-transform: capitalize;
+ }
+  .form-control small{
+   margin-left: 30px;
+   visibility: hidden;
+ }
+.form-control button{
+   margin-left: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  width: 85%;
+  background-color: #4a48cf;
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+ .form-control.success input{
+  border-color:  hsl(106, 58%, 55%);
+ }
+ .form-control.error input{
+  border-color:  rgb(240, 69, 39);
+ }
+ .form-control.error small{
+  color:  rgb(240, 69, 39);
+  visibility: visible ;
+ }
