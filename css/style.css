@@ -39,7 +39,7 @@ body{
    
  }
  
- .form-control input{
+ .form-control input, .form-control textarea{
    border: 2px solid hsl(0, 1%, 72%);
    border-radius: 4px;
    display: block;
@@ -47,6 +47,12 @@ body{
    margin-left: 30px;
    width: 85%;
     
+ }
+ .form-control textarea {
+  min-height: 100px;
+ }
+ .form-control input[type="file"]{
+  border: none;
  }
  .form-hiden{
   display: none;
@@ -90,4 +96,8 @@ body{
  .form-control.error small{
   color:  rgb(240, 69, 39);
   visibility: visible ;
+ }
+
+ .text-center {
+  text-align: center;
  }
