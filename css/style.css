@@ -39,7 +39,7 @@ body{
    
  }
  
- .form-control input{
+ .form-control input, .form-control textarea{
    border: 2px solid hsl(0, 1%, 72%);
    border-radius: 4px;
    display: block;
@@ -47,6 +47,12 @@ body{
    margin-left: 30px;
    width: 85%;
     
+ }
+ .form-control textarea {
+  min-height: 100px;
+ }
+ .form-control input[type="file"]{
+  border: none;
  }
  .form-hiden{
   display: none;
@@ -91,3 +97,70 @@ body{
   color:  rgb(240, 69, 39);
   visibility: visible ;
  }
+
+ .text-center {
+  text-align: center;
+ }
+.padded {
+  padding: 20px;
+}
+
+.single-detail h3 {
+  margin-bottom: -10px;
+}
+.single-detail {
+  margin-bottom: 15px;
+  
+}
+.single-detail p {
+  margin-bottom: 35px;
+  border: 1px solid rgba(128, 128, 128, .4);
+  padding: 10px;
+  border-radius: 6px;
+}
+.single-detail button {
+  margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 85%;
+    background-color: #4a48cf;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.filter{
+  padding-left: 5px;
+}
+.filter h3{
+  margin-bottom: 5px;
+}
+
+.request-listing {
+  list-style-type: none;
+  padding-left: 0;
+}
+.request-listing li{
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 8px;
+  display: flex;
+}
+.request-listing .button {
+  border: 1px solid black;
+  margin-bottom: 8px;
+  margin-left: auto;
+  background-color: #4a48cf;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.request-listing .button:hover {
+  text-decoration: none;
+  background-color: #3a38bf;
+}
