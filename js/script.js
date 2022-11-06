@@ -5,11 +5,12 @@ const companyId = document.getElementById("company-id");
 const password = document.getElementById("password");
 const password2 = document.getElementById('password2');
 
-
+if(!!form) { 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     checkInputs();
 });
+}
 
   function checkInputs() {
      const usernameValue = username.value.trim();
@@ -61,3 +62,13 @@ form.addEventListener('submit', (e) =>{
       const formControl = input.parentElement;
       formControl.className = "form-control success";
     }
+
+    document.querySelectorAll(".shwMod").forEach(b => {
+      b.addEventListener("click", function(e) {
+        console.log("clicked")
+        e.preventDefault();
+        const modal = document.querySelector(".modal");
+        if (!!modal)
+          modal.classList.toggle("show")
+      })
+    })

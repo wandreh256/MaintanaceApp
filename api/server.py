@@ -40,7 +40,7 @@ def single_request(request_id):
 @app.post("/api/v1/users/requests")
 def create_request():
     user_request = request.get_json()
-    user_request['id'] = len(requests)
+    user_request['id'] = len(requests) + 1
     requests.append(user_request)
     return user_request
 
